@@ -1,0 +1,284 @@
+{
+  "manifestVersion": 2,
+  "moduleId": "digital.modula.vault-notes.formatting",
+  "name": "Vault Formatting",
+  "description": "Backend-free declarative formatting plugin for Vault Notes.",
+  "version": "0.1.0",
+  "standardVersion": "2.1.0",
+  "sectionVersions": {
+    "identity": "2.1.0",
+    "lifecycle": "2.1.0",
+    "backend": "2.1.0",
+    "engines": "2.1.0",
+    "ai": "2.1.0",
+    "permissions": "2.1.0",
+    "settings": "2.1.0",
+    "routes": "2.1.0",
+    "views": "2.1.0",
+    "records": "2.1.0",
+    "actions": "2.1.0",
+    "functions": "2.1.0",
+    "jobs": "2.1.0",
+    "events": "2.1.0",
+    "notifications": "2.1.0",
+    "search": "2.1.0",
+    "exports": "2.1.0",
+    "imports": "2.1.0",
+    "synchronization": "2.1.0",
+    "dependencies": "2.1.0",
+    "optionalDependencies": "2.1.0",
+    "integrations": "2.1.0",
+    "billing": "2.1.0",
+    "telemetry": "2.1.0",
+    "diagnostics": "2.1.0",
+    "accessibility": "2.1.0",
+    "localization": "2.1.0",
+    "appearance": "2.1.0",
+    "onboarding": "2.1.0",
+    "migrations": "2.1.0",
+    "capabilities": "2.1.0",
+    "services": "2.1.0",
+    "apis": "2.1.0",
+    "hooks": "2.1.0",
+    "metrics": "2.1.0",
+    "storage": "2.1.0",
+    "widgets": "2.1.0",
+    "navigation": "2.1.0",
+    "ui": "2.1.0",
+    "automation": "2.1.0",
+    "offline": "2.1.0",
+    "realtime": "2.1.0",
+    "versioning": "2.1.0",
+    "compatibilityMatrix": "2.1.0",
+    "marketplace": "2.1.0"
+  },
+  "publisher": {
+    "publisherId": "modula",
+    "displayName": "Modula",
+    "website": "https://modula.digital"
+  },
+  "source": {
+    "provider": "github",
+    "repository": "modula-mod/modula-vault-formatting",
+    "commit": "0000000000000000000000000000000000000000",
+    "manifestPath": "module.manifest.json",
+    "releaseTag": "vault-formatting-v0.1.0",
+    "releaseAssetName": "modula-vault-formatting-0.1.0.tgz"
+  },
+  "license": {
+    "status": "firstParty",
+    "evidenceIds": [
+      "LICENSE",
+      "README.md"
+    ]
+  },
+  "trust": {
+    "requestedLevel": "firstParty"
+  },
+  "compatibility": {
+    "minimumGreenfieldVersion": "0.1.0",
+    "minimumModulaHostVersion": "0.1.0",
+    "protocolVersions": [
+      "greenfield.v1"
+    ],
+    "platforms": [
+      "ios",
+      "android",
+      "web"
+    ]
+  },
+  "permissions": [
+    {
+      "permission": "notes.editor.contribute",
+      "reason": "Register declared local formatting commands.",
+      "risk": "low"
+    },
+    {
+      "permission": "notes.actions.contribute",
+      "reason": "Register the copy-as-Markdown action.",
+      "risk": "low"
+    }
+  ],
+  "dependencies": [
+    {
+      "moduleId": "digital.modula.vault-notes",
+      "versionRange": ">=1.2.0 <2.0.0",
+      "optional": false,
+      "reason": "Vault Formatting extends Vault Notes."
+    }
+  ],
+  "contributions": {
+    "functions": [
+      {
+        "id": "digital.modula.vault-notes.formatting.function.word-count.registration",
+        "title": "Word count",
+        "functionId": "digital.modula.vault-notes.formatting.function.word-count",
+        "mode": "localDeclarative",
+        "inputSchemaRef": "schemas/formatting-input.schema.json",
+        "outputSchemaRef": "schemas/formatting-output.schema.json",
+        "executionRequired": true
+      },
+      {
+        "id": "digital.modula.vault-notes.formatting.function.copy-markdown.registration",
+        "title": "Copy as Markdown",
+        "functionId": "digital.modula.vault-notes.formatting.function.copy-markdown",
+        "mode": "localDeclarative",
+        "inputSchemaRef": "schemas/formatting-input.schema.json",
+        "outputSchemaRef": "schemas/formatting-output.schema.json",
+        "executionRequired": true
+      },
+      {
+        "id": "digital.modula.vault-notes.formatting.function.heading.registration",
+        "title": "Format heading",
+        "functionId": "digital.modula.vault-notes.formatting.function.heading",
+        "mode": "localDeclarative",
+        "inputSchemaRef": "schemas/formatting-input.schema.json",
+        "outputSchemaRef": "schemas/formatting-output.schema.json",
+        "executionRequired": true
+      },
+      {
+        "id": "digital.modula.vault-notes.formatting.function.quote.registration",
+        "title": "Format quote",
+        "functionId": "digital.modula.vault-notes.formatting.function.quote",
+        "mode": "localDeclarative",
+        "inputSchemaRef": "schemas/formatting-input.schema.json",
+        "outputSchemaRef": "schemas/formatting-output.schema.json",
+        "executionRequired": true
+      },
+      {
+        "id": "digital.modula.vault-notes.formatting.function.checklist.registration",
+        "title": "Format checklist",
+        "functionId": "digital.modula.vault-notes.formatting.function.checklist",
+        "mode": "localDeclarative",
+        "inputSchemaRef": "schemas/formatting-input.schema.json",
+        "outputSchemaRef": "schemas/formatting-output.schema.json",
+        "executionRequired": true
+      }
+    ]
+  },
+  "integrity": {
+    "manifestSha256": "552ffd8fa7e0a13ce98c145e5c9aa35a9921f4a3a4b6b54ee98435507794deec",
+    "releaseSha256": "0000000000000000000000000000000000000000000000000000000000000000"
+  },
+  "extensionProduct": {
+    "version": "0.1.0",
+    "kind": "plugin",
+    "targets": [
+      {
+        "productId": "digital.modula.vault-notes",
+        "versionRange": ">=1.2.0 <2.0.0",
+        "requiredCapabilities": [
+          "notes.editor.contribute",
+          "notes.actions.contribute"
+        ],
+        "requiredExtensionPoints": [
+          "digital.modula.vault-notes.editor.command",
+          "digital.modula.vault-notes.note.actions",
+          "digital.modula.vault-notes.note.inspector"
+        ]
+      }
+    ],
+    "extensionPoints": [],
+    "contributions": [
+      {
+        "id": "digital.modula.vault-notes.formatting.contribution.word-count",
+        "title": "Word count",
+        "kind": "record.decorator",
+        "extensionPoint": "digital.modula.vault-notes.note.inspector",
+        "functionId": "digital.modula.vault-notes.formatting.function.word-count",
+        "requiredCapability": "notes.editor.contribute",
+        "availability": {
+          "platforms": [
+            "ios",
+            "android",
+            "web"
+          ],
+          "requiresOnline": false,
+          "requiredCapabilities": []
+        },
+        "priority": 80
+      },
+      {
+        "id": "digital.modula.vault-notes.formatting.contribution.copy-markdown",
+        "title": "Copy as Markdown",
+        "kind": "menu.item",
+        "extensionPoint": "digital.modula.vault-notes.note.actions",
+        "functionId": "digital.modula.vault-notes.formatting.function.copy-markdown",
+        "requiredCapability": "notes.actions.contribute",
+        "availability": {
+          "platforms": [
+            "ios",
+            "android",
+            "web"
+          ],
+          "requiresOnline": false,
+          "requiredCapabilities": []
+        },
+        "priority": 80
+      },
+      {
+        "id": "digital.modula.vault-notes.formatting.contribution.heading",
+        "title": "Format heading",
+        "kind": "editor.command",
+        "extensionPoint": "digital.modula.vault-notes.editor.command",
+        "functionId": "digital.modula.vault-notes.formatting.function.heading",
+        "requiredCapability": "notes.editor.contribute",
+        "availability": {
+          "platforms": [
+            "ios",
+            "android",
+            "web"
+          ],
+          "requiresOnline": false,
+          "requiredCapabilities": []
+        },
+        "priority": 80
+      },
+      {
+        "id": "digital.modula.vault-notes.formatting.contribution.quote",
+        "title": "Format quote",
+        "kind": "editor.command",
+        "extensionPoint": "digital.modula.vault-notes.editor.command",
+        "functionId": "digital.modula.vault-notes.formatting.function.quote",
+        "requiredCapability": "notes.editor.contribute",
+        "availability": {
+          "platforms": [
+            "ios",
+            "android",
+            "web"
+          ],
+          "requiresOnline": false,
+          "requiredCapabilities": []
+        },
+        "priority": 80
+      },
+      {
+        "id": "digital.modula.vault-notes.formatting.contribution.checklist",
+        "title": "Format checklist",
+        "kind": "editor.command",
+        "extensionPoint": "digital.modula.vault-notes.editor.command",
+        "functionId": "digital.modula.vault-notes.formatting.function.checklist",
+        "requiredCapability": "notes.editor.contribute",
+        "availability": {
+          "platforms": [
+            "ios",
+            "android",
+            "web"
+          ],
+          "requiresOnline": false,
+          "requiredCapabilities": []
+        },
+        "priority": 80
+      }
+    ],
+    "retention": {
+      "defaultMode": "DELETE_DATA",
+      "supportsUserChoice": false,
+      "metadataNamespace": "digital.modula.vault-notes.formatting"
+    },
+    "graphPolicy": {
+      "maxDepth": 8,
+      "maxNodes": 128
+    }
+  }
+}
