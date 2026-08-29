@@ -1,0 +1,184 @@
+{
+  "$schema": "https://modula.digital/schemas/product-standard/1.0-rc/product.schema.json",
+  "schema": "modula.product.1.0",
+  "productStandard": "1.0-RC",
+  "identity": {
+    "id": "digital.modula.vault-notes.formatting",
+    "kind": "plugin",
+    "version": "0.2.0",
+    "displayName": "Vault Formatting",
+    "description": "Backend-free declarative formatting plugin for Vault Notes. No database, no network, no dedicated service.",
+    "status": "beta",
+    "visibility": "beta"
+  },
+  "publisher": {
+    "id": "modula",
+    "displayName": "Modula",
+    "website": "https://modula.digital",
+    "supportUrl": "https://modula.digital/support"
+  },
+  "source": {
+    "repository": "modula-mod/modula-vault-formatting",
+    "commit": "9fd56b076ae4a9cce9cb0896681434a6ca86fb72",
+    "manifestPath": "modula.product.json",
+    "provider": "github"
+  },
+  "licence": {
+    "spdx": "UNLICENSED",
+    "evidence": [
+      "LICENSE"
+    ],
+    "declaredByPublisher": true
+  },
+  "release": {
+    "channel": "beta",
+    "notes": "MPS 1.0 canonical plugin packaging. Implementation unchanged from 0.1.0. Icon is a development placeholder.",
+    "builder": "modula-product-release",
+    "provenance": {
+      "manifestSha256": "08d673ce69f4346aa92b92836a72fc015bf97f20141121fa3af00b49c4d49b13"
+    }
+  },
+  "security": {
+    "baseline": "mps-1.0",
+    "rawUserBearerForwarding": "forbidden",
+    "crossProductDatabaseAccess": "forbidden",
+    "arbitraryRemoteCode": "forbidden-by-default"
+  },
+  "presentation": {
+    "icon": {
+      "role": "product.icon",
+      "path": "assets/icon/icon.svg",
+      "mediaType": "image/svg+xml",
+      "sha256": "401aa6d9123267abfd8a17e695da846484bc645ffc21f083141a4733cd8a0ffb",
+      "developmentAsset": true,
+      "alt": "Vault Formatting development placeholder icon"
+    }
+  },
+  "compatibility": {
+    "productStandard": "^1.0.0-rc",
+    "greenfieldProtocol": "greenfield.v1",
+    "host": ">=1.0.0",
+    "platforms": [
+      "ios",
+      "android",
+      "web"
+    ]
+  },
+  "telemetry": {
+    "destinationClass": "none",
+    "optOut": "not-applicable",
+    "purpose": "none"
+  },
+  "network": {
+    "class": "none"
+  },
+  "family": {
+    "id": "digital.modula.vault",
+    "role": "member"
+  },
+  "relationships": [
+    {
+      "type": "belongsToFamily",
+      "productId": "digital.modula.vault"
+    },
+    {
+      "type": "targets",
+      "productId": "digital.modula.vault-notes",
+      "versionRange": "^1.2.0"
+    },
+    {
+      "type": "extends",
+      "productId": "digital.modula.vault-notes",
+      "versionRange": "^1.2.0"
+    }
+  ],
+  "frontend": {
+    "mode": "host-contribution"
+  },
+  "backend": {
+    "mode": "none"
+  },
+  "permissions": [
+    {
+      "id": "notes.editor.contribute",
+      "reason": "Register declared local formatting commands in the note editor.",
+      "category": "records",
+      "required": true,
+      "risk": "low"
+    },
+    {
+      "id": "notes.actions.contribute",
+      "reason": "Register the copy-as-Markdown note action.",
+      "category": "records",
+      "required": true,
+      "risk": "low"
+    }
+  ],
+  "capabilities": {
+    "requires": [
+      "notes.editor.contribute",
+      "notes.actions.contribute"
+    ],
+    "provides": []
+  },
+  "contributions": [
+    {
+      "id": "digital.modula.vault-notes.formatting.contribution.word-count",
+      "target": "digital.modula.vault-notes/note.inspector@1",
+      "label": "Word count",
+      "priority": 80
+    },
+    {
+      "id": "digital.modula.vault-notes.formatting.contribution.copy-markdown",
+      "target": "digital.modula.vault-notes/note.actions@1",
+      "label": "Copy as Markdown",
+      "priority": 80
+    },
+    {
+      "id": "digital.modula.vault-notes.formatting.contribution.heading",
+      "target": "digital.modula.vault-notes/editor.command@1",
+      "label": "Format heading",
+      "priority": 80
+    },
+    {
+      "id": "digital.modula.vault-notes.formatting.contribution.quote",
+      "target": "digital.modula.vault-notes/editor.command@1",
+      "label": "Format quote",
+      "priority": 80
+    },
+    {
+      "id": "digital.modula.vault-notes.formatting.contribution.checklist",
+      "target": "digital.modula.vault-notes/editor.command@1",
+      "label": "Format checklist",
+      "priority": 80
+    }
+  ],
+  "privacy": {
+    "dataAccessed": [
+      "none beyond the currently open note for local formatting"
+    ],
+    "dataCreated": [
+      "none"
+    ],
+    "dataTransmitted": [
+      "none"
+    ],
+    "retention": "none \u2014 plugin creates no stored data",
+    "export": "not-applicable",
+    "deletion": "not-applicable",
+    "analytics": "none",
+    "telemetry": "none"
+  },
+  "support": {
+    "documentation": "https://modula.digital/docs",
+    "support": "https://modula.digital/support",
+    "privacy": "https://modula.digital/privacy",
+    "securityContact": "https://modula.digital/security",
+    "publisherContact": "https://modula.digital/support"
+  },
+  "offers": [
+    {
+      "model": "free"
+    }
+  ]
+}
