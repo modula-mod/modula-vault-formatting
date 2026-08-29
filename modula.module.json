@@ -488,7 +488,7 @@
   },
   "release": {
     "repository": "modula-mod/modula-vault-formatting",
-    "commitSha": "25a77a79d6fe392fbfff8e63536df2fe260442a9",
+    "commitSha": "100072711c4de11494a0fc42325bd369f61330fd",
     "checksum": "0000000000000000000000000000000000000000000000000000000000000000",
     "licenseEvidence": [
       "LICENSE",
