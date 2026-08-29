@@ -5,7 +5,7 @@
   "identity": {
     "id": "digital.modula.vault-notes.formatting",
     "kind": "plugin",
-    "version": "0.2.0",
+    "version": "0.3.0",
     "displayName": "Vault Formatting",
     "description": "Backend-free declarative formatting plugin for Vault Notes. No database, no network, no dedicated service.",
     "status": "beta",
@@ -32,10 +32,11 @@
   },
   "release": {
     "channel": "beta",
-    "notes": "MPS 1.0 canonical plugin packaging. Implementation unchanged from 0.1.0. Icon is a development placeholder.",
+    "notes": "Product-owned formatting commands and host contributions for the generic Modula Product Host. Backend, database, and network remain absent. Icon is a development placeholder.",
     "builder": "modula-product-release",
     "provenance": {
-      "manifestSha256": "08d673ce69f4346aa92b92836a72fc015bf97f20141121fa3af00b49c4d49b13"
+      "manifestSha256": "08d673ce69f4346aa92b92836a72fc015bf97f20141121fa3af00b49c4d49b13",
+      "frontendSha256": "11e09a5f37bf8e177f0d0144d8a05380606eaee408894ccd54cbe60bd4bd5b3d"
     }
   },
   "security": {
@@ -93,7 +94,13 @@
     }
   ],
   "frontend": {
-    "mode": "host-contribution"
+    "mode": "host-contribution",
+    "artifact": {
+      "path": "frontend/frontend.manifest.json",
+      "mediaType": "application/vnd.modula.frontend+json",
+      "sha256": "11e09a5f37bf8e177f0d0144d8a05380606eaee408894ccd54cbe60bd4bd5b3d",
+      "schemaVersion": "1.0.0"
+    }
   },
   "backend": {
     "mode": "none"
@@ -163,7 +170,7 @@
     "dataTransmitted": [
       "none"
     ],
-    "retention": "none \u2014 plugin creates no stored data",
+    "retention": "none — plugin creates no stored data",
     "export": "not-applicable",
     "deletion": "not-applicable",
     "analytics": "none",

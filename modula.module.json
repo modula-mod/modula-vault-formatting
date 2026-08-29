@@ -1,7 +1,7 @@
 {
   "schemaVersion": "2.1.0",
   "standardVersion": "2.1.0",
-  "moduleVersion": "0.2.0",
+  "moduleVersion": "0.3.0",
   "manifestSchemaVersion": "2.1.0",
   "dataSchemaVersion": "1.0.0",
   "id": "digital.modula.vault-notes.formatting",
@@ -488,7 +488,7 @@
   },
   "release": {
     "repository": "modula-mod/modula-vault-formatting",
-    "commitSha": "26f1748ad58dd6f15303fc9aedcf972906f21691",
+    "commitSha": "25a77a79d6fe392fbfff8e63536df2fe260442a9",
     "checksum": "0000000000000000000000000000000000000000000000000000000000000000",
     "licenseEvidence": [
       "LICENSE",
@@ -597,7 +597,7 @@
       {
         "id": "digital.modula.vault-notes.formatting.commands",
         "title": "Vault formatting commands",
-        "version": "0.2.0",
+        "version": "0.3.0",
         "kind": "capability"
       }
     ]
@@ -1056,7 +1056,7 @@
   },
   "versioning": {
     "version": "2.1.0",
-    "moduleVersion": "0.2.0",
+    "moduleVersion": "0.3.0",
     "standardVersion": "2.1.0",
     "manifestVersion": "2.1.0"
   },
@@ -1156,7 +1156,7 @@
     "items": []
   },
   "extensionProduct": {
-    "version": "0.2.0",
+    "version": "0.3.0",
     "kind": "plugin",
     "targets": [
       {
