@@ -19,7 +19,7 @@
   },
   "source": {
     "repository": "modula-mod/modula-vault-formatting",
-    "commit": "100072711c4de11494a0fc42325bd369f61330fd",
+    "commit": "43663b1cf2edf271b4d0a51c54c0df772a9177c5",
     "manifestPath": "modula.product.json",
     "provider": "github"
   },
