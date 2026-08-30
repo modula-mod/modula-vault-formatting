@@ -4,6 +4,6 @@ Backend-free formatting plugin for Vault Notes. Proves MPS does not force a data
 
 Kind: plugin. Family: `digital.modula.vault`. Targets `digital.modula.vault-notes`.
 
-Frontend: host-contribution. Backend: none. Storage: none. Network: none.
+Frontend: product-owned, compiled host contributions only; no fake standalone app. Backend: none. Storage: none. Network: none.
 
 Non-goals: no AI, no transcription, no Greenfield tables.

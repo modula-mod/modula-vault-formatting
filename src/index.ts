@@ -1,5 +1,5 @@
 export const VAULT_FORMATTING_PRODUCT_ID = 'digital.modula.vault-notes.formatting' as const
-export const VAULT_FORMATTING_VERSION = '0.2.0' as const
+export const VAULT_FORMATTING_VERSION = '0.3.0' as const
 
 export type FormattingOperation = 'heading' | 'quote' | 'checklist'
 

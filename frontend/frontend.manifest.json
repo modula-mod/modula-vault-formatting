@@ -1,0 +1,118 @@
+{
+  "$schema": "https://modula.digital/schemas/product-standard/1.0-rc/frontend.schema.json",
+  "accessibility": {
+    "declaration": "host-baseline-with-product-semantics",
+    "keyboardNavigation": true,
+    "reduceMotion": true,
+    "scalableText": true,
+    "screenReader": true
+  },
+  "actions": [
+    {
+      "family": "function.invoke",
+      "functionId": "digital.modula.vault-notes.formatting.function.word-count",
+      "id": "digital.modula.vault-notes.formatting.function.word-count",
+      "label": "Word count"
+    },
+    {
+      "family": "function.invoke",
+      "functionId": "digital.modula.vault-notes.formatting.function.copy-markdown",
+      "id": "digital.modula.vault-notes.formatting.function.copy-markdown",
+      "label": "Copy as Markdown"
+    },
+    {
+      "family": "function.invoke",
+      "functionId": "digital.modula.vault-notes.formatting.function.heading",
+      "id": "digital.modula.vault-notes.formatting.function.heading",
+      "label": "Format heading"
+    },
+    {
+      "family": "function.invoke",
+      "functionId": "digital.modula.vault-notes.formatting.function.quote",
+      "id": "digital.modula.vault-notes.formatting.function.quote",
+      "label": "Format quote"
+    },
+    {
+      "family": "function.invoke",
+      "functionId": "digital.modula.vault-notes.formatting.function.checklist",
+      "id": "digital.modula.vault-notes.formatting.function.checklist",
+      "label": "Format checklist"
+    }
+  ],
+  "contributions": [
+    {
+      "action": "digital.modula.vault-notes.formatting.function.word-count",
+      "component": {
+        "action": "digital.modula.vault-notes.formatting.function.word-count",
+        "text": "Word count",
+        "type": "button"
+      },
+      "id": "digital.modula.vault-notes.formatting.contribution.word-count",
+      "requiredPermissions": [
+        "notes.editor.contribute"
+      ],
+      "target": "digital.modula.vault-notes/note.inspector@1"
+    },
+    {
+      "action": "digital.modula.vault-notes.formatting.function.copy-markdown",
+      "component": {
+        "action": "digital.modula.vault-notes.formatting.function.copy-markdown",
+        "text": "Copy as Markdown",
+        "type": "button"
+      },
+      "id": "digital.modula.vault-notes.formatting.contribution.copy-markdown",
+      "requiredPermissions": [
+        "notes.actions.contribute"
+      ],
+      "target": "digital.modula.vault-notes/note.actions@1"
+    },
+    {
+      "action": "digital.modula.vault-notes.formatting.function.heading",
+      "component": {
+        "action": "digital.modula.vault-notes.formatting.function.heading",
+        "text": "Format heading",
+        "type": "button"
+      },
+      "id": "digital.modula.vault-notes.formatting.contribution.heading",
+      "requiredPermissions": [
+        "notes.editor.contribute"
+      ],
+      "target": "digital.modula.vault-notes/editor.command@1"
+    },
+    {
+      "action": "digital.modula.vault-notes.formatting.function.quote",
+      "component": {
+        "action": "digital.modula.vault-notes.formatting.function.quote",
+        "text": "Format quote",
+        "type": "button"
+      },
+      "id": "digital.modula.vault-notes.formatting.contribution.quote",
+      "requiredPermissions": [
+        "notes.editor.contribute"
+      ],
+      "target": "digital.modula.vault-notes/editor.command@1"
+    },
+    {
+      "action": "digital.modula.vault-notes.formatting.function.checklist",
+      "component": {
+        "action": "digital.modula.vault-notes.formatting.function.checklist",
+        "text": "Format checklist",
+        "type": "button"
+      },
+      "id": "digital.modula.vault-notes.formatting.contribution.checklist",
+      "requiredPermissions": [
+        "notes.editor.contribute"
+      ],
+      "target": "digital.modula.vault-notes/editor.command@1"
+    }
+  ],
+  "frontendSchemaVersion": "1.0.0",
+  "hostRuntime": {
+    "versionRange": ">=1.0.0 <2.0.0"
+  },
+  "mode": "host-contribution",
+  "mpsVersion": "1.0-RC",
+  "productId": "digital.modula.vault-notes.formatting",
+  "releaseVersion": "0.3.0",
+  "schema": "modula.frontend.1.0"
+}
