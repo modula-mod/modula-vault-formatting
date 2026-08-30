@@ -1,5 +1,10 @@
 # Changelog
 
+## 0.4.0
+
+- Moves formatting contribution authoring to typed TSX compiled into the safe MPS frontend artifact.
+- Excludes raw product frontend source from release packages.
+
 ## 0.3.0
 
 - Own all formatting commands and contribution presentation in a validated MPS frontend artifact.

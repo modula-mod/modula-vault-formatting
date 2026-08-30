@@ -5,7 +5,7 @@
   "identity": {
     "id": "digital.modula.vault-notes.formatting",
     "kind": "plugin",
-    "version": "0.3.0",
+    "version": "0.4.0",
     "displayName": "Vault Formatting",
     "description": "Backend-free declarative formatting plugin for Vault Notes. No database, no network, no dedicated service.",
     "status": "beta",
@@ -32,11 +32,11 @@
   },
   "release": {
     "channel": "beta",
-    "notes": "Product-owned formatting commands and host contributions for the generic Modula Product Host. Backend, database, and network remain absent. Icon is a development placeholder.",
+    "notes": "Formatting commands and contributions are authored as typed TSX and statically compiled to a non-executable host-contribution artifact. Backend, database, and network remain absent. Icon is a development placeholder.",
     "builder": "modula-product-release",
     "provenance": {
       "manifestSha256": "08d673ce69f4346aa92b92836a72fc015bf97f20141121fa3af00b49c4d49b13",
-      "frontendSha256": "11e09a5f37bf8e177f0d0144d8a05380606eaee408894ccd54cbe60bd4bd5b3d"
+      "frontendSha256": "9f82f0552dbe33f0aeae407f742c00a21b6e4b147b35e75615cc85e818a79879"
     }
   },
   "security": {
@@ -98,7 +98,7 @@
     "artifact": {
       "path": "frontend/frontend.manifest.json",
       "mediaType": "application/vnd.modula.frontend+json",
-      "sha256": "11e09a5f37bf8e177f0d0144d8a05380606eaee408894ccd54cbe60bd4bd5b3d",
+      "sha256": "9f82f0552dbe33f0aeae407f742c00a21b6e4b147b35e75615cc85e818a79879",
       "schemaVersion": "1.0.0"
     }
   },
