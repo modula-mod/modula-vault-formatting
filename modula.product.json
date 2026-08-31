@@ -1,7 +1,7 @@
 {
-  "$schema": "https://modula.digital/schemas/product-standard/1.0-rc/product.schema.json",
+  "$schema": "https://modula.digital/schemas/product-standard/1.0/product.schema.json",
   "schema": "modula.product.1.0",
-  "productStandard": "1.0-RC",
+  "productStandard": "1.0",
   "identity": {
     "id": "digital.modula.vault-notes.formatting",
     "kind": "plugin",
@@ -35,8 +35,8 @@
     "notes": "Formatting commands and contributions are authored as typed TSX and statically compiled to a non-executable host-contribution artifact. Backend, database, and network remain absent. Icon is a development placeholder.",
     "builder": "modula-product-release",
     "provenance": {
-      "manifestSha256": "08d673ce69f4346aa92b92836a72fc015bf97f20141121fa3af00b49c4d49b13",
-      "frontendSha256": "9f82f0552dbe33f0aeae407f742c00a21b6e4b147b35e75615cc85e818a79879"
+      "manifestSha256": "1eb782a109d8dcaab4b4c29dee92249a1e3223b01558f857987aaf39354490f2",
+      "frontendSha256": "bc4318287f602e0f25d3707cbbb4fc6b2a7f754ff8d4fb6fd2460df920a93216"
     }
   },
   "security": {
@@ -56,7 +56,7 @@
     }
   },
   "compatibility": {
-    "productStandard": "^1.0.0-rc",
+    "productStandard": "^1.0.0",
     "greenfieldProtocol": "greenfield.v1",
     "host": ">=1.0.0",
     "platforms": [
@@ -98,7 +98,7 @@
     "artifact": {
       "path": "frontend/frontend.manifest.json",
       "mediaType": "application/vnd.modula.frontend+json",
-      "sha256": "9f82f0552dbe33f0aeae407f742c00a21b6e4b147b35e75615cc85e818a79879",
+      "sha256": "bc4318287f602e0f25d3707cbbb4fc6b2a7f754ff8d4fb6fd2460df920a93216",
       "schemaVersion": "1.0.0"
     }
   },
