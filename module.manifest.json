@@ -60,7 +60,7 @@
   "source": {
     "provider": "github",
     "repository": "modula-mod/modula-vault-formatting",
-    "commit": "43663b1cf2edf271b4d0a51c54c0df772a9177c5",
+    "commit": "d02525e8ffbaca28101ddad521e0401c9db91660",
     "manifestPath": "module.manifest.json",
     "releaseTag": "vault-formatting-v0.4.0",
     "releaseAssetName": "modula-vault-formatting-0.4.0.tgz"
@@ -157,7 +157,7 @@
     ]
   },
   "integrity": {
-    "manifestSha256": "85aca3e9a41740a3ec6d44b252ecb09ab18af1a6cfb860f177c3784feac3e151",
+    "manifestSha256": "aa3ebf495d1d6c24273937d54855490abe71bcea573f3fa8baf94030052684b6",
     "releaseSha256": "0000000000000000000000000000000000000000000000000000000000000000"
   },
   "extensionProduct": {

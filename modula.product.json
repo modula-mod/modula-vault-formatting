@@ -19,7 +19,7 @@
   },
   "source": {
     "repository": "modula-mod/modula-vault-formatting",
-    "commit": "43663b1cf2edf271b4d0a51c54c0df772a9177c5",
+    "commit": "d02525e8ffbaca28101ddad521e0401c9db91660",
     "manifestPath": "modula.product.json",
     "provider": "github"
   },
@@ -35,7 +35,7 @@
     "notes": "Formatting commands and contributions are authored as typed TSX and statically compiled to a non-executable host-contribution artifact. Backend, database, and network remain absent. Icon is a development placeholder.",
     "builder": "modula-product-release",
     "provenance": {
-      "manifestSha256": "1eb782a109d8dcaab4b4c29dee92249a1e3223b01558f857987aaf39354490f2",
+      "manifestSha256": "8202b41e5ae405a6c5ca2e90e6bd8b633256bd26c801d404c36a0cc0a8db7f88",
       "frontendSha256": "bc4318287f602e0f25d3707cbbb4fc6b2a7f754ff8d4fb6fd2460df920a93216"
     }
   },
