@@ -1,7 +1,0 @@
-[
-  {"id": "digital.modula.vault-notes.formatting.function.word-count", "family": "function.invoke", "label": "Word count", "functionId": "digital.modula.vault-notes.formatting.function.word-count"},
-  {"id": "digital.modula.vault-notes.formatting.function.copy-markdown", "family": "function.invoke", "label": "Copy as Markdown", "functionId": "digital.modula.vault-notes.formatting.function.copy-markdown"},
-  {"id": "digital.modula.vault-notes.formatting.function.heading", "family": "function.invoke", "label": "Format heading", "functionId": "digital.modula.vault-notes.formatting.function.heading"},
-  {"id": "digital.modula.vault-notes.formatting.function.quote", "family": "function.invoke", "label": "Format quote", "functionId": "digital.modula.vault-notes.formatting.function.quote"},
-  {"id": "digital.modula.vault-notes.formatting.function.checklist", "family": "function.invoke", "label": "Format checklist", "functionId": "digital.modula.vault-notes.formatting.function.checklist"}
-]

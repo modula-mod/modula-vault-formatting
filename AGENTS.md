@@ -3,7 +3,7 @@
 - Product ID (published, immutable): `digital.modula.vault-notes.formatting`
 - Kind: plugin
 - Family: `digital.modula.vault` (member)
-- MPS: 1.0-RC — canonical file `modula.product.json`
+- MPS: 1.0 — canonical file `modula.product.json`
 - Frontend: `host-contribution`
 - Backend: **none**
 - Database: **none**

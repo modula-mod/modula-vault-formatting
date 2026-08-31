@@ -3,7 +3,7 @@
   "moduleId": "digital.modula.vault-notes.formatting",
   "name": "Vault Formatting",
   "description": "Backend-free declarative formatting plugin for Vault Notes.",
-  "version": "0.3.0",
+  "version": "0.4.0",
   "standardVersion": "2.1.0",
   "sectionVersions": {
     "identity": "2.1.0",
@@ -60,10 +60,10 @@
   "source": {
     "provider": "github",
     "repository": "modula-mod/modula-vault-formatting",
-    "commit": "100072711c4de11494a0fc42325bd369f61330fd",
+    "commit": "d02525e8ffbaca28101ddad521e0401c9db91660",
     "manifestPath": "module.manifest.json",
-    "releaseTag": "vault-formatting-v0.3.0",
-    "releaseAssetName": "modula-vault-formatting-0.3.0.tgz"
+    "releaseTag": "vault-formatting-v0.4.0",
+    "releaseAssetName": "modula-vault-formatting-0.4.0.tgz"
   },
   "license": {
     "status": "firstParty",
@@ -157,11 +157,11 @@
     ]
   },
   "integrity": {
-    "manifestSha256": "38591c0a3e757874302cc71cebc3a859a965766e0fe40f6ac3a07198c3a4c821",
+    "manifestSha256": "aa3ebf495d1d6c24273937d54855490abe71bcea573f3fa8baf94030052684b6",
     "releaseSha256": "0000000000000000000000000000000000000000000000000000000000000000"
   },
   "extensionProduct": {
-    "version": "0.3.0",
+    "version": "0.4.0",
     "kind": "plugin",
     "targets": [
       {

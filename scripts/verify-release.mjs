@@ -19,7 +19,7 @@ check(standard.extensionProduct.targets?.[0]?.productId === 'digital.modula.vaul
 check(standard.backend === undefined && greenfield.backend === undefined, 'backend absent')
 check(standard.serviceRegistry.items.length === 0 && standard.jobRegistry.items.length === 0, 'service and job registrations absent')
 check(standard.extensionProduct.contributions.filter(item => item.kind === 'editor.command').length === 3, 'three editor commands declared')
-check(packageJson.files.includes('frontend'), 'release package includes frontend')
+check(packageJson.files.includes('frontend/frontend.manifest.json') && !packageJson.files.includes('frontend'), 'release package includes only the compiled frontend')
 
 const frontendPath = product.frontend?.artifact?.path
 check(product.frontend?.mode === 'host-contribution' && frontendPath === 'frontend/frontend.manifest.json' && existsSync(frontendPath), 'product-owned host contribution artifact exists')
